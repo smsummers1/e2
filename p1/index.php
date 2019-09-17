@@ -13,7 +13,7 @@
     <p>I am constantly inspired by the message that Dr. Martin Luther King, Jr. and & Mahatma Gandhi portrayed throughout their lives.  The commitment to positive change via nonviolence remind us all how powerful our words are and how important continued communication is to not just our social system, but to everything that we do.  It is my lifelong passion to emulate these leaders to inspire positive change by practicing communication with mindfulness, kindness, open mindedness, and love. </p>
     
     By:  Shawna Summers
-    <br><br>
+    <br/><br/>
     <a href="https://historynewsnetwork.org/article/169795">Image Resource </a>
 </body>
 
