@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- Author: Shawna Summers -->
 <!-- Project: 1 -->
 
