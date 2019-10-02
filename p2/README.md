@@ -13,7 +13,7 @@
 +Set up board with 9 locations on a 3x3 board
     +Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
     
-        | Tic Tac Toe Indexes|
+        |       |       |       |
         | ----- | ----- | ----- |
         |   0   |   1   |   2   |
         |   3   |   4   |   5   |
@@ -21,6 +21,7 @@
     
    +Store a meaningful descriptor such as "TopLeft", "TopCenter", "TopRight" in each array location so it is easy to remember what each array location correlates to on the board.
    
+        |        |        |        |
         | ------ | ------ | ------ |
         | TopLeft | TopCenter | TopRight |
         | MiddleLeft | MiddleCenter | MiddleRight |
@@ -34,7 +35,7 @@
     +As the player places a token in an empty and random location the descriptor in the array such as BottomLeft gets replaced by the X or O string.
     +Check for a winner after each play comparing the 8 possible winning vectors described below with their corresponding array locations.
     
-    |Tic Tac Toe Stored Values in Beginning Array |
+    |         |          |
     | ------- | -------- |
     | Horizontal Top | board[0], board[1], board[2] |
     | Horizontal Middle | board[3], board[4], board[5] |
