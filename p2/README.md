@@ -3,13 +3,11 @@
 + Production URL: <http://p2.shawnasummers.xyz>
 
 ## Game planning
--Define a winner variable set to the string 'Tie' and an isWinner variable to false.
-
--Player A and B randomly get assigned a token of X or O
++Define a winner variable set to the string 'Tie' and an isWinner variable to false.
++Player A and B randomly get assigned a token of X or O
     -Use the rand() function to assign a token of X or O 
-    -X and O will be assigned as strings to PlayerA and PlayerB variables
-    
--Set up board with 9 locations on a 3x3 board
+    -X and O will be assigned as strings to PlayerA and PlayerB variables   
++Set up board with 9 locations on a 3x3 board
     -Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
     
         |       |       |       |
