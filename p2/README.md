@@ -1,13 +1,15 @@
 ## Project 2
 + By: Shawna Summers
 + Production URL: <http://p2.shawnasummers.xyz>
+
+
 ## Game planning
-+Define a winner variable set to the string 'Tie' and an isWinner variable to false.
-+Player A and B randomly get assigned a token of X or O
-    -Use the rand() function to assign a token of X or O 
-    -X and O will be assigned as strings to PlayerA and PlayerB variables   
-+Set up board with 9 locations on a 3x3 board
-    -Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
+*Define a winner variable set to the string 'Tie' and an isWinner variable to false.
+*Player A and B randomly get assigned a token of X or O
+    *Use the rand() function to assign a token of X or O 
+    *X and O will be assigned as strings to PlayerA and PlayerB variables   
+*Set up board with 9 locations on a 3x3 board
+    *Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
     
         |       |       |       |
         | ----- | ----- | ----- |
@@ -15,7 +17,7 @@
         |   3   |   4   |   5   |
         |   6   |   7   |   8   |
     
-   -Store a meaningful descriptor such as "TopLeft", "TopCenter", "TopRight" in each array location so it is easy to remember what each array location correlates to on the board.
+   *Store a meaningful descriptor such as "TopLeft", "TopCenter", "TopRight" in each array location so it is easy to remember what each array location correlates to on the board.
    
         |        |        |        |
         | ------ | ------ | ------ |
@@ -23,9 +25,9 @@
         | MiddleLeft | MiddleCenter | MiddleRight |
         | BottomLeft | BottomCenter | BottomRight |
    
--Player assigned X goes first
-    -Player X goes first.  Since there are 9 plays the player that goes first also gets to go last giving them a total of 5 moves vs 4 moves for the player assigned O.
-    -First have both players take 4 turns starting with Player assigned the X. 
++Player assigned X goes first
+    +Player X goes first.  Since there are 9 plays the player that goes first also gets to go last giving them a total of 5 moves vs 4 moves for the player assigned O.
+    +First have both players take 4 turns starting with Player assigned the X. 
     -As the player places a token in an empty and random location the descriptor in the array such as BottomLeft gets replaced by the X or O string.
     -Check for a winner after each play comparing the 8 possible winning vectors described below with their corresponding array locations.
     
