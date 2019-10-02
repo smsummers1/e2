@@ -4,12 +4,12 @@
 
 
 ## Game planning
-*Define a winner variable set to the string 'Tie' and an isWinner variable to false.
-*Player A and B randomly get assigned a token of X or O
-    *Use the rand() function to assign a token of X or O 
-    *X and O will be assigned as strings to PlayerA and PlayerB variables   
-*Set up board with 9 locations on a 3x3 board
-    *Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
+* Define a winner variable set to the string 'Tie' and an isWinner variable to false.
+* Player A and B randomly get assigned a token of X or O
+    * Use the rand() function to assign a token of X or O 
+    * X and O will be assigned as strings to PlayerA and PlayerB variables   
+* Set up board with 9 locations on a 3x3 board
+    * Create a single one-dimensional indexed array that starts at 0 and ends at 8.  In my imagination it is starting in the upper left hand corner and ending in the bottom right hand corner shown below.
     
         |       |       |       |
         | ----- | ----- | ----- |
@@ -17,7 +17,7 @@
         |   3   |   4   |   5   |
         |   6   |   7   |   8   |
     
-   *Store a meaningful descriptor such as "TopLeft", "TopCenter", "TopRight" in each array location so it is easy to remember what each array location correlates to on the board.
+   * Store a meaningful descriptor such as "TopLeft", "TopCenter", "TopRight" in each array location so it is easy to remember what each array location correlates to on the board.
    
         |        |        |        |
         | ------ | ------ | ------ |
