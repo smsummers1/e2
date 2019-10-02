@@ -244,10 +244,10 @@ foreach ($board as $location => $location_value) {
         echo "<td>";
 
         if ($location_value == 'X') {
-            echo "<div id='" . $location . "'><img src='x.png' width='32' height='32'></div>";
+            echo "<div id='" . $location . "'><img src='x.png' width='32' height='32' alt='X'></div>";
         } elseif ($location_value == 'O') {
-            echo "<div id='" . $location . "'><img src='o.png' width='32' height='30'></div>";
-        } else echo "<div id='" . $location . "'><img src='empty.png' width='32' height='32'></div>";
+            echo "<div id='" . $location . "'><img src='o.png' width='32' height='30' alt='O'></div>";
+        } else echo "<div id='" . $location . "'><img src='empty.png' width='32' height='32' alt='empty'></div>";
         
         echo "</td>";
         
