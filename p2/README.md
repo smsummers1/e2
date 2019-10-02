@@ -1,7 +1,6 @@
 ## Project 2
 + By: Shawna Summers
 + Production URL: <http://p2.shawnasummers.xyz>
-
 ## Game planning
 +Define a winner variable set to the string 'Tie' and an isWinner variable to false.
 +Player A and B randomly get assigned a token of X or O
