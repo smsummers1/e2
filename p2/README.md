@@ -1,4 +1,4 @@
-# Project 2
+## Project 2
 + By: Shawna Summers
 + Production URL: <http://p2.shawnasummers.xyz>
 
@@ -64,7 +64,6 @@
 
 
 ## Outside resources
-
 -php manual - php.net - https://www.php.net/
 -w3schools php, html, css - w3school.com - https://www.w3schools.com/
 -html validator - https://validator.w3.org/
