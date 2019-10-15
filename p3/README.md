@@ -12,7 +12,8 @@
 * I set up the html form input element 
 
 '''html
-<input type="number" name="guess" step="1" min="0" max="100" required>''' 
+<input type="number" name="guess" step="1" min="0" max="100" required>
+''' 
 
 * Each attribute set up in this field help to ensure that the user is entering with in the parameters set in the instructions.  Step of 1 only allows whole numbers, min and max only allow the user to enter values within that range and number makes sure that the user only enters a number.
 * Once the user enters their guess then the process.php has to decide if it is the first time the user entered the guess or not.
@@ -23,7 +24,8 @@
 $guess = $_POST['guess']; 
 $guess = $_POST['guess'];
 $guesses = $_SESSION['guesses'];
-$numGuesses = $_SESSION['numGuesses'];'''
+$numGuesses = $_SESSION['numGuesses'];
+'''
 
 * The guess variable is from the form, the guesses variable stores all user guesses in an array, and nthe numGuesses variable accumulates the number of guesses per game.
 
