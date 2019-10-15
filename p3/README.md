@@ -11,25 +11,27 @@
 * Instructions, forms and the two buttons; Guess and Play Again are displayed on the screen.
 * I set up the html form input element 
 
-'''html
+```html
 <input type="number" name="guess" step="1" min="0" max="100" required>
-''' 
+```
 
 * Each attribute set up in this field help to ensure that the user is entering with in the parameters set in the instructions.  Step of 1 only allows whole numbers, min and max only allow the user to enter values within that range and number makes sure that the user only enters a number.
 * Once the user enters their guess then the process.php has to decide if it is the first time the user entered the guess or not.
 * If it is the first time then the mystery number is randomly generated calling the selectNumber().
 * Then process.php needs to collect data from the post and session arrays.
 
-'''php
+```php
 $guess = $_POST['guess']; 
 $guess = $_POST['guess'];
 $guesses = $_SESSION['guesses'];
 $numGuesses = $_SESSION['numGuesses'];
-'''
+```
 
 * The guess variable is from the form, the guesses variable stores all user guesses in an array, and nthe numGuesses variable accumulates the number of guesses per game.
 
-''' $numGuesses += 1; '''
+```php
+$numGuesses += 1;
+```
 
 * Lastly process.php checks to see if the guess is the same as the number.  The results will be stored in the session variable to be later displayed by index.php.  It will either be "Too High!", "Too Low!", or "Correct!"
 * Session variables get set and then process.php redirects back to the index.php page to allow the new information to be displayed.
