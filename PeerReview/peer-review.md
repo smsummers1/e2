@@ -27,6 +27,17 @@
 ### Are there any parts of the code that you don't understand?
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
+- Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/
+'''php 
+function whohas_thebutton()
+{
+	global $players;'''
+  
+'''php
+function should_draw_a_card( $x )
+{
+	global $players, $dealer;
+'''
 
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
