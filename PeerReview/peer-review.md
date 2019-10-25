@@ -30,7 +30,7 @@
 
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
-- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values.
+- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values, but it has been so long since I have played Blackjack that I wasn't sure.  May need more instructions for us novice players.  ;)
 - What is the *Bummer* card that gets dealt to the dealer?
 - Who wins if everyone busts?
 - Who wins if multiple players get the same number closest to 21?
