@@ -25,5 +25,5 @@
 
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
-- In the ReadMe file it would be helpful to understand what the point value of the cards, especially the Jack, Queen, King, and Ace to the user.  I don't know what their values.  I have never played Blackjack before.
+- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values.
 - 
