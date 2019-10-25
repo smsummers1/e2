@@ -24,3 +24,5 @@
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 
 ### Do you have any additional comments not covered in the above questions?
+- In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
+- 
