@@ -35,4 +35,6 @@
 - Who wins if everyone busts?
 - Who wins if multiple players get the same number closest to 21?
 - Who wins if multiple players get Blackjack?
+- I don't understand why it says that the total points for player1 and player2 are 21.  Seems to me that it should still give the correct total points, but post each as a winner because the dealer was dealt the *yahPoo* card.
+
 
