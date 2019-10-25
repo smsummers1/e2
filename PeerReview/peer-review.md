@@ -11,7 +11,8 @@
 - Still says Player 1 has Blackjack, but they no longer have Blackjack.
 ![Player1 doesn't have Blackjack](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%206.57.37%20PM.png)
 - This one says *Blackjack Busted* instead of the total number of points.
-![Player1 says Blackjack Busted](
+![Player1 says Blackjack Busted](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.09.16%20PM.png)
+- alksjdf
 
 ### Referencing the course nots on [Form design flow](https://hesweb.dev/e2/notes#/php/form-flow), describe the form design flow used in this project.
 
