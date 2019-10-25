@@ -26,4 +26,5 @@
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
 - In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values.
+- What is the *Bummer* card that gets dealt to the dealer?
 - 
