@@ -23,13 +23,16 @@
 - Utilizing **Design C**
 ![Design Flow C](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-26%20at%209.47.58%20AM.png)
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
-- My limited understanding in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur......
+- From what I understand in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur in your code flow......
 - *index-controller.php* is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
 - *index.php* is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
-- *process.php* is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.
+- *process.php* is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-- the logic in index-controller could use comments to explain the logic.
+- Each function could use a bit of comments listed above the function to explain what the function does, what parameters are expected and what the output or return value is for.
+- Comments on the arrays would be helpful to understand what each one is holding
+- Comments for each of the conditional statements to explain what they are trying to achieve.
+
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
@@ -123,6 +126,6 @@ function determine_outcome()
 - Who wins if multiple players get Blackjack?
 - I don't understand why it says that the total points for player1 and player2 are 21.  Seems to me that it should still give the correct total points, but post each as a winner because the dealer was dealt the **yahPoo** card.
 ![yahPoo Card point total off](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.16.52%20PM.png)
--lkajdf
+
 
 
