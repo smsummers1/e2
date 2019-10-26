@@ -74,35 +74,17 @@
 
 **whohas_thebutton()** - decides who's turn it is
   
-```php
-should_draw_a_card( $x )
-//gives suggestion to user if they should draw a card based on the total point total they have.  
-```
+```should_draw_a_card( $x )``` - gives suggestion to user if they should draw a card based on the total point total they have.  
 
-```php
-draw_a_card( $x )
-//current player draws a card
-```
+```draw_a_card( $x )``` - current player draws a card
 
-```php
-draw_a_hole_card( $x )
-//computer draws a hole card
-```
+```draw_a_hole_card( $x )``` - computer draws a hole card
 
-```php
-show_hand( $x )
-//stores cards in current players hand array location
-```
+```show_hand( $x )``` - stores cards in current players hand array location
 
-```php
-apply_gamerules( $x )
-//storing additional information in the current players array such as setting ['blackjack'], ['total'], ['bonus'], etc based on the stored cards in the array
-```
+```apply_gamerules( $x )``` - storing additional information in the current players array such as setting ['blackjack'], ['total'], ['bonus'], etc based on the stored cards in the array
 
-```php
-determine_outcome()
-//stores who wins, looses, busts, etc. based on the total points in current players hand.
-```
+```determine_outcome()``` - stores who wins, looses, busts, etc. based on the total points in current players hand.
 
 ### Are there any parts of the code that you found interesting or taught you something new?
 - The game-lib.php file I found to be an interesting way further better modularize the code and separate code for developers.  
