@@ -1,10 +1,12 @@
 ## P3 Peer Review
 
-+ Reviewer's name: Shawna Summers
-+ Reviwee's name: Phil Yuska
-+ URL to reviewee's Github repo: *<https://github.com/philyuska/e2/tree/master/p3>*
++ **Reviewer's name:** Shawna Summers
++ **Reviwee's name:** Phil Yuska
++ **URL to reviewee's Github repo:** *<https://github.com/philyuska/e2/tree/master/p3>*
 
 *Answer the following questions in regards to the student's project you are reviewing. Include code snippets in your answers when relevant.*
+
+---
 
 ### Initial thoughts and feedback
 - Seriously amazing job!  
