@@ -79,7 +79,9 @@ determine_outcome()
 - lakjfalkj
 
 ### Are there any parts of the code that you don't understand?
-- I had a really hard time following all of the global variables, the many arrays, and the functions.  
+- I had a really hard time following all of the global variables, the many arrays, and the functions.
+- The show_hand() function doesn't actually show the cards.
+- The apply_gamerules() function is so long that I get lost in all that it is trying to accomplish.  I think it would be a good idea to break that function down into smaller functions.
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/
@@ -119,6 +121,8 @@ function determine_outcome()
 {
 	global $players, $max_players, $dealer;
 ```
+- Not a single comment listed in the code.  
+- The use of $x throughout your code is confusing to me and might be better represented with a variable that better represents the contents that is stored in that variable.
 
 ### Do you have any additional comments not covered in the above questions?
 - For more novice players like myself you might consider including more details in your Instructions.  In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"* I don't know what a hole card is.
