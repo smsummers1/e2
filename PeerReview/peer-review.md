@@ -21,7 +21,7 @@
 
 ### Referencing the course notes on [Form design flow](https://hesweb.dev/e2/notes#/php/form-flow), describe the form design flow used in this project.
 - Utilizing **Design C**
-
+![Design Flow C](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-26%20at%209.47.58%20AM.png)
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
 - My limited understanding in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur......
 - *index-controller.php* is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
