@@ -24,14 +24,21 @@ ___
 - The output says that the total points for player1 and player2 are 21, but that isn't actually the total.  Seems to me that it should still give the correct total points, but post each as a winner because the dealer was dealt the **yahPoo** card.
 ![yahPoo Card point total off](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.16.52%20PM.png)
 
+---
+
 ### Referencing the course notes on [Form design flow](https://hesweb.dev/e2/notes#/php/form-flow), describe the form design flow used in this project.
 - Utilizing **Design C**
 ![Design Flow C](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-26%20at%209.47.58%20AM.png)
+
+---
+
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
 - From what I understand in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur in your code flow......
 - ***index-controller.php*** is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
 - ***index.php*** is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
 - ***process.php*** is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
+
+---
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
 - Without comments I really struggled understanding your functions, arrays, and conditional statements.
@@ -39,6 +46,7 @@ ___
 - Comments on the arrays would be helpful to understand what each one is holding
 - Comments for each of the conditional statements to explain what they are deciding.  
 
+---
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
@@ -72,6 +80,8 @@ ___
 
 ```header()``` - Send a raw HTTP header
 
+---
+
 ### List any/all user-defined PHP functions used with a brief summary of what the function does
 
 ```whohas_thebutton()``` - decides who's turn it is
@@ -88,8 +98,12 @@ ___
 
 ```determine_outcome()``` - stores who wins, looses, busts, etc. based on the total points in current players hand.
 
+---
+
 ### Are there any parts of the code that you found interesting or taught you something new?
 - The game-lib.php file I found to be an interesting way further better modularize the code and separate code for developers.  
+
+---
 
 ### Are there any parts of the code that you don't understand?
 - I had a really hard time following all of the global variables, the many arrays, and the functions.
@@ -97,6 +111,8 @@ ___
 - The apply_gamerules() function is so long that I get lost in all that it is trying to accomplish.  It would have helped me to understand it better if it was broken down into smaller functions, but that is just me.  :) 
 - The $strategy array was hard for me to wrap my head around.
 - It took me a while to understand what was being stored in the variable $x.
+
+---
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/ . Another option might be to store the global variables as superglobal session variables.  Not sure the best way to go there.
@@ -175,6 +191,7 @@ $players[ $Current_Player ]['digest'][] = "took hit";
 draw_a_card( $Current_Player );
 $players[ $Current_Player ]['advise_hit'] = should_draw_a_card( $Current_Player );	
 ```
+---
 
 ### Do you have any additional comments not covered in the above questions?
 - For more novice players like myself you might consider including more details in your Instructions.  :)
@@ -183,6 +200,6 @@ $players[ $Current_Player ]['advise_hit'] = should_draw_a_card( $Current_Player 
 - Who wins if multiple players get the same number closest to 21?
 - Who wins if multiple players get Blackjack?
 
-
+---
 
 
