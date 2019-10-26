@@ -43,27 +43,27 @@
 
 ```php
 whohas_thebutton()
-//
+//decides who's turn it is
 ```
   
 ```php
 should_draw_a_card( $x )
-//gives suggestion to user if they should draw a card
+//gives suggestion to user if they should draw a card based on the total point total they have.  
 ```
 
 ```php
 draw_a_card( $x )
-//user draws a card
+//current player draws a card
 ```
 
 ```php
 draw_a_hole_card( $x )
-//user draws a hole card
+//computer draws a hole card
 ```
 
 ```php
 show_hand( $x )
-//shows cards in hand
+//shows cards in current players hand
 ```
 
 ```php
@@ -87,7 +87,8 @@ determine_outcome()
 - It took me a while to understand what was being stored in the variable $x.
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
-- Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/
+- Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/ . Another option might be to store the global variables as superglobal session variables.  Not sure the best way to go there.
+
 ```php 
 function whohas_thebutton()
 {
