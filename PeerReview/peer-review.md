@@ -27,9 +27,7 @@
 - the logic in index-controller could use comments to explain the logic.
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
-```php
-determine_outcome()
-```
+
 
 ```php
 whohas_thebutton()
@@ -53,6 +51,10 @@ show_hand( $x )
 
 ```php
 apply_gamerules( $x )
+```
+
+```php
+determine_outcome()
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
@@ -92,6 +94,12 @@ function apply_gamerules( $x )
 {
 	global $inital_handsize, $deck, $players, $dealer;
 ```
+```php
+function determine_outcome()
+{
+	global $players, $max_players, $dealer;
+```
+
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
 - In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values, but it has been so long since I have played Blackjack that I wasn't sure.  May need more instructions for us novice players.  ;)
