@@ -6,13 +6,17 @@
 
 *Answer the following questions in regards to the student's project you are reviewing. Include code snippets in your answers when relevant.*
 
+### Initial thoughts and feedback
+- Seriously amazing job!  
+- I totally enjoyed playing and learning more about Blackjack.  
+- I like how you had three players where two were the user and one was the computer.  Nice touch!
 
 ### Are you able to produce any errors or unexpected results?
-- Still says Player 1 has Blackjack, but they no longer have Blackjack.
+- Disclaimer:  I am not sure that there are actually errors and since my knowledge of Blackjack is based on recent Google Searches even my expected results may be off.  So please take these next few points with a grain of salt and realize that I am a total newbie!  :)
+- 1.  Still says Player 1 has Blackjack, but they no longer have Blackjack, right?
 ![Player1 doesn't have Blackjack](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%206.57.37%20PM.png)
-- This one says *Blackjack Busted* instead of the total number of points.
+- 2.  This one says *Blackjack Busted* instead of the total number of points. And again not sure the player still has Blackjack.
 ![Player1 says Blackjack Busted](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.09.16%20PM.png)
-- alksjdf
 
 ### Referencing the course notes on [Form design flow](https://hesweb.dev/e2/notes#/php/form-flow), describe the form design flow used in this project.
 - Utilizing **Design C**
@@ -110,8 +114,8 @@ function determine_outcome()
 ```
 
 ### Do you have any additional comments not covered in the above questions?
-- In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
-- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values, but it has been so long since I have played Blackjack that I wasn't sure.  May need more instructions for us novice players.  ;)
+- For more novice players like myself you might consider including more details in your Instructions.  In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"* I don't know what a hole card is.
+- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values either a 1 or a 11, but it has been so long since I have played Blackjack so I did a search.  (https://www.google.com/search?q=blackjack+ace+value&rlz=1C5CHFA_enUS789US789&oq=blackjack+ace+value&aqs=chrome..69i57.4070j0j7&sourceid=chrome&ie=UTF-8)  May need more instructions for us novice players.  ;)
 - What is the *Bummer* card that gets dealt to the dealer?
 - Who wins if everyone busts?
 - Who wins if multiple players get the same number closest to 21?
