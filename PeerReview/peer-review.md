@@ -6,6 +6,8 @@
 
 *Answer the following questions in regards to the student's project you are reviewing. Include code snippets in your answers when relevant.*
 
+<span style="color:blue">some *This is Blue italic.* text</span>
+
 ---
 
 ### Initial thoughts and feedback
