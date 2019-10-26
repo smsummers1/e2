@@ -40,6 +40,37 @@
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
+**array_keys()** - 
+
+**in_array()** - 
+
+**array_shift()** - 
+
+**array_key_exists()** - 
+
+**unset()** - 
+
+**dechex()** - 
+
+**rand()** - 
+
+**hexdec()** - 
+
+**count()** - 
+
+**session_start()** - 
+
+**isset()** - 
+
+**ucfirst()** - 
+
+**shuffle()** - 
+
+**join()** - 
+
+**header()** - 
+
+### List any/all user-defined PHP functions used with a brief summary of what the function does
 
 **whohas_thebutton()** - decides who's turn it is
   
