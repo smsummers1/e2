@@ -32,9 +32,10 @@
 - *process.php* is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-- Each function could use a bit of comments listed above the function to explain what the function does, what parameters are expected and what the output or return value is for.
+- Without comments I really struggled understanding your functions, arrays, and conditional statements.
+- Each function could use a bit of comments listed above the function explaining what the function does, what parameters are expected and what the output or return value is for.
 - Comments on the arrays would be helpful to understand what each one is holding
-- Comments for each of the conditional statements to explain what they are trying to achieve.
+- Comments for each of the conditional statements to explain what they are deciding.  
 
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
@@ -81,7 +82,9 @@ determine_outcome()
 ### Are there any parts of the code that you don't understand?
 - I had a really hard time following all of the global variables, the many arrays, and the functions.
 - The show_hand() function doesn't actually show the cards.
-- The apply_gamerules() function is so long that I get lost in all that it is trying to accomplish.  I think it would be a good idea to break that function down into smaller functions.
+- The apply_gamerules() function is so long that I get lost in all that it is trying to accomplish.  It would have helped me to understand it better if it was broken down into smaller functions, but that is just me.  :) 
+- The $strategy array was hard for me to wrap my head around.
+- It took me a while to understand what was being stored in the variable $x.
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/
