@@ -36,9 +36,9 @@ ___
 
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
 - From what I understand in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur in your code flow......
-- ```***index-controller.php***``` is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
-- ```***index.php***``` is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
-- ```***process.php***``` is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
+- ```index-controller.php``` is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
+- ```index.php``` is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
+- ```process.php``` is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
 
 ---
 
