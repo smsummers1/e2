@@ -21,15 +21,15 @@ ___
 
 **Disclaimer:**  I am not sure that there are actually errors and since my knowledge of Blackjack is based on recent Google Searches even my expected results may be off.  So please take these next few points with a grain of salt and realize that I am a total newbie!  :)
 
-#### Still says Player 1 has Blackjack, but they no longer have Blackjack, right?
+1. #### Still says Player 1 has Blackjack, but they no longer have Blackjack, right?
 ![Player1 doesn't have Blackjack](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%206.57.37%20PM.png)
 
 
-#### This one says *Blackjack Busted* instead of the total number of points. And again not sure the player still has Blackjack.
+2. #### This one says *Blackjack Busted* instead of the total number of points. And again not sure the player still has Blackjack.
 ![Player1 says Blackjack Busted](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.09.16%20PM.png)
 
 
-#### The output says that the total points for player1 and player2 are 21, but that isn't actually the total.  Seems to me that it should still give the correct total points, but post each as a winner because the dealer was dealt the **yahPoo** card.
+3. #### The output says that the total points for player1 and player2 are 21, but that isn't actually the total.  Seems to me that it should still give the correct total points, but post each as a winner because the dealer was dealt the **yahPoo** card.
 ![yahPoo Card point total off](https://github.com/smsummers1/e2/blob/master/PeerReview/Screen%20Shot%202019-10-25%20at%207.16.52%20PM.png)
 
 ---
