@@ -72,9 +72,9 @@
 
 ### List any/all user-defined PHP functions used with a brief summary of what the function does
 
-**whohas_thebutton()** - decides who's turn it is
+```whohas_thebutton()``` - decides who's turn it is
   
-```should_draw_a_card( $x )``` - gives suggestion to user if they should draw a card based on the total point total they have.  
+```should_draw_a_card( $x )``` - gives hit or stay suggestion to current player based on the point total they have.  
 
 ```draw_a_card( $x )``` - current player draws a card
 
@@ -82,7 +82,7 @@
 
 ```show_hand( $x )``` - stores cards in current players hand array location
 
-```apply_gamerules( $x )``` - storing additional information in the current players array such as setting ['blackjack'], ['total'], ['bonus'], etc based on the stored cards in the array
+```apply_gamerules( $x )``` - storing supplemental information in the current players array
 
 ```determine_outcome()``` - stores who wins, looses, busts, etc. based on the total points in current players hand.
 
@@ -135,8 +135,8 @@ function determine_outcome()
 {
 	global $players, $max_players, $dealer;
 ```
-- Not a single comment listed in the code.  
-- The use of $x throughout your code is confusing to me.  If I am understanding your code correctly it might be better to use a variable that is more self documenting with a variable like $current_player instead of $x.  I provided a few examples below.....
+- Missing comments in the code.  
+- It is important to use self-documenting variables as often as you can.  The use of $x throughout your code was confusing to me.  If I am understanding your code correctly $x is the $current_player, but I may be completely off here.  I provided a few examples below.....
 
 **Code Before**
 ```php
