@@ -41,10 +41,7 @@
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
 
-```php
-whohas_thebutton()
-//decides who's turn it is
-```
+**whohas_thebutton()** - decides who's turn it is
   
 ```php
 should_draw_a_card( $x )
