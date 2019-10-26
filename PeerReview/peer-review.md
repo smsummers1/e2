@@ -109,7 +109,7 @@ ___
 ---
 
 ### Are there any parts of the code that you found interesting or taught you something new?
-- The ```game-lib.php``` file I found to be an interesting way further better modularize the code and separate code for developers.  
+- The ```game-lib.php``` file I found to be an interesting way to further modularize the code and separate code for developers.  
 
 ---
 
