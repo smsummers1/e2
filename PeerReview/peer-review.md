@@ -122,7 +122,43 @@ function determine_outcome()
 	global $players, $max_players, $dealer;
 ```
 - Not a single comment listed in the code.  
-- The use of $x throughout your code is confusing to me and might be better represented with a variable that better represents the contents that is stored in that variable.
+- The use of $x throughout your code is confusing to me.  If I am understanding your code correctly it might be better to use a variable that is more self documenting with a variable like $current_player instead of $x.  I provided a few examples below.....
+
+**Code Before**
+```php
+for ( $x = 1; $x <= $max_players; $x++ )
+{
+	if ( $players[ $x ]['blackjack'] )
+		$players[ $x ]['digest'][] = "total is {$players[ $x ]['total']}, black jack";
+
+	if ( $players[ $x ]['bonus'] )
+		$players[ $x ]['digest'][] = "bonus win";			
+}
+```
+**Code After**
+
+```php
+for ( $Current_Player = 1; $Current_Player <= $max_players; $Current_Player++ )
+{
+	if ( $players[ $Current_Player ]['blackjack'] )
+		$players[ $Current_Player ]['digest'][] = "total is {$players[ $Current_Player ]['total']}, black jack";
+
+	if ( $players[ $Current_Player ]['bonus'] )
+		$players[ $Current_Player ]['digest'][] = "bonus win";			
+}
+```
+**Code Before**
+```php
+$players[ $x ]['digest'][] = "took hit";
+draw_a_card( $x );
+$players[ $x ]['advise_hit'] = should_draw_a_card( $x );	
+```
+**Code After**
+```php
+$players[ $Current_Player ]['digest'][] = "took hit";
+draw_a_card( $Current_Player );
+$players[ $Current_Player ]['advise_hit'] = should_draw_a_card( $Current_Player );	
+```
 
 ### Do you have any additional comments not covered in the above questions?
 - For more novice players like myself you might consider including more details in your Instructions.  In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"* I don't know what a hole card is.
