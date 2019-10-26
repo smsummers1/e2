@@ -34,9 +34,9 @@ ___
 
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
 - From what I understand in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur in your code flow......
-- ***index-controller.php*** is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
-- ***index.php*** is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
-- ***process.php*** is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
+- ```***index-controller.php***``` is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
+- ```***index.php***``` is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
+- ```***process.php***``` is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.  Seems that you are splitting this task between your process.php file and your index-controller.php file when it all should be accomplished in the process.php.....I think.  Again, still learning this stuff myself and am not completely sure I am correct on this understanding.  :)
 
 ---
 
@@ -101,16 +101,16 @@ ___
 ---
 
 ### Are there any parts of the code that you found interesting or taught you something new?
-- The game-lib.php file I found to be an interesting way further better modularize the code and separate code for developers.  
+- The ```game-lib.php``` file I found to be an interesting way further better modularize the code and separate code for developers.  
 
 ---
 
 ### Are there any parts of the code that you don't understand?
 - I had a really hard time following all of the global variables, the many arrays, and the functions.
-- The show_hand() function doesn't actually show the cards.
-- The apply_gamerules() function is so long that I get lost in all that it is trying to accomplish.  It would have helped me to understand it better if it was broken down into smaller functions, but that is just me.  :) 
-- The $strategy array was hard for me to wrap my head around.
-- It took me a while to understand what was being stored in the variable $x.
+- The ```show_hand()``` function doesn't actually show the cards.
+- The ```apply_gamerules()``` function is so long that I get lost in all that it is trying to accomplish.  It would have helped me to understand it better if it was broken down into smaller functions, but that is just me.  :) 
+- The ```$strategy``` array was hard for me to wrap my head around.
+- It took me a while to understand what was being stored in the variable ```$x```.
 
 ---
 
@@ -154,7 +154,7 @@ function determine_outcome()
 	global $players, $max_players, $dealer;
 ```
 - Missing comments in the code.  
-- It is important to use self-documenting variables as often as you can.  The use of $x throughout your code was confusing to me.  If I am understanding your code correctly $x is the $current_player, but I may be completely off here.  I provided a few examples below.....
+- It is important to use self-documenting variables as often as you can.  The use of $x throughout your code was confusing to me.  If I am understanding your code correctly ```$x``` is the ```$current_player```, but I may be completely off here.  I provided a few examples below.....
 
 **Code Before**
 ```php
