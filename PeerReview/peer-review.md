@@ -40,35 +40,35 @@
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
-```array_keys()``` - Return all the keys or a subset of the keys of an array
+```array_keys()``` - Returns all the keys or a subset of the keys of an array
 
-```in_array()``` 
+```in_array()``` - Checks if a value exists in an array
 
-```array_shift()```
+```array_shift()``` - Shift an element off the beginning of array
 
-```array_key_exists()```
+```array_key_exists()``` - Checks if the given key or index exists in the array
 
-```unset()```
+```unset()``` - Unset a given variable
 
-```dechex()```
+```dechex()``` - Decimal to hexadecimal
 
-```rand()```
+```rand()``` - Generate a random integer
 
-```hexdec()```
+```hexdec()``` - Hexadecimal to decimal
 
-```count()```
+```count()``` - Count all elements in an array, or something in an object
 
-```session_start()```
+```session_start()``` - Start new or resume existing session
 
-```isset()```
+```isset()``` - Determine if a variable is declared and is different than NULL
 
-```ucfirst()```
+```ucfirst()``` - Make a string's first character uppercase
 
-```shuffle()```
+```shuffle()``` - Shuffle an array
 
-```join()```
+```join()``` - Join array elements with a string
 
-```header()``` 
+```header()``` - Send a raw HTTP header
 
 ### List any/all user-defined PHP functions used with a brief summary of what the function does
 
