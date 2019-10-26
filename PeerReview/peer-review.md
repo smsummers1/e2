@@ -65,8 +65,10 @@ determine_outcome()
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
+- lakjfalkj
 
 ### Are there any parts of the code that you don't understand?
+- I had a really hard time following all of the global variables, the many arrays, and the functions.  
 
 ### Are there any best practices discussed in course material that you feel were not addressed in the code?
 - Almost all of your functions utilize global variables.  It would be better to set up your functions with parameters and pass in arguments.  Using global variables can create a huge issue when debugging.  Check out this article:  https://www.lattix.com/programming-hell-and-global-variables/
