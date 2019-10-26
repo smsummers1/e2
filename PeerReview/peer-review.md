@@ -76,7 +76,7 @@ determine_outcome()
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
-- lakjfalkj
+- The game-lib.php file I found to be an interesting way further better modularize the code and separate code for developers.  
 
 ### Are there any parts of the code that you don't understand?
 - I had a really hard time following all of the global variables, the many arrays, and the functions.
