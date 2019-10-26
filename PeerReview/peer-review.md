@@ -22,10 +22,10 @@
 - *index.php* displays the form and results
 - *process.php* logic only, no output, sets session variables, and redirects to index.php file.
 
--issues with Design Flow C include
-	--laskjdfa
-	--;lakjsfd
-	--;alkjsdfa
+- issues with Design Flow C include
+	- laskjdfa
+	- ;lakjsfd
+	- ;alkjsdfa
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
 
