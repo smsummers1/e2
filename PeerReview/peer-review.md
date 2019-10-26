@@ -41,22 +41,27 @@ should_draw_a_card( $x )
 
 ```php
 draw_a_card( $x )
+//user draws a card
 ```
 
 ```php
 draw_a_hole_card( $x )
+//user draws a hole card
 ```
 
 ```php
 show_hand( $x )
+//shows cards in hand
 ```
 
 ```php
 apply_gamerules( $x )
+//
 ```
 
 ```php
 determine_outcome()
+//decides who wins, looses, etc.
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
