@@ -63,17 +63,17 @@ draw_a_hole_card( $x )
 
 ```php
 show_hand( $x )
-//shows cards in current players hand
+//stores cards in current players hand array location
 ```
 
 ```php
 apply_gamerules( $x )
-//
+//storing additional information in the current players array such as setting ['blackjack'], ['total'], ['bonus'], etc based on the stored cards in the array
 ```
 
 ```php
 determine_outcome()
-//decides who wins, looses, etc.
+//stores who wins, looses, busts, etc. based on the total points in current players hand.
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
