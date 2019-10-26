@@ -40,35 +40,35 @@
 
 ### List any/all built-in PHP functions used with a brief summary of what the function does
 
-```array_keys()```
+```array_keys()``` - Return all the keys or a subset of the keys of an array
 
-**in_array()** - 
+```in_array()``` 
 
-**array_shift()** - 
+```array_shift()```
 
-**array_key_exists()** - 
+```array_key_exists()```
 
-**unset()** - 
+```unset()```
 
-**dechex()** - 
+```dechex()```
 
-**rand()** - 
+```rand()```
 
-**hexdec()** - 
+```hexdec()```
 
-**count()** - 
+```count()```
 
-**session_start()** - 
+```session_start()```
 
-**isset()** - 
+```isset()```
 
-**ucfirst()** - 
+```ucfirst()```
 
-**shuffle()** - 
+```shuffle()```
 
-**join()** - 
+```join()```
 
-**header()** - 
+```header()``` 
 
 ### List any/all user-defined PHP functions used with a brief summary of what the function does
 
