@@ -161,10 +161,9 @@ $players[ $Current_Player ]['advise_hit'] = should_draw_a_card( $Current_Player 
 ```
 
 ### Do you have any additional comments not covered in the above questions?
-- For more novice players like myself you might consider including more details in your Instructions.  In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"* I don't know what a hole card is.
-- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values either a 1 or a 11, but it has been so long since I have played Blackjack so I did a search.  (https://www.google.com/search?q=blackjack+ace+value&rlz=1C5CHFA_enUS789US789&oq=blackjack+ace+value&aqs=chrome..69i57.4070j0j7&sourceid=chrome&ie=UTF-8)  May need more instructions for us novice players.  ;)
-- What is the *Bummer* card that gets dealt to the dealer?
-- Who wins if everyone busts?
+- For more novice players like myself you might consider including more details in your Instructions.  :)
+- In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values either a 1 or a 11, but it has been so long since I have played Blackjack so I did a search.  (https://www.google.com/search?q=blackjack+ace+value&rlz=1C5CHFA_enUS789US789&oq=blackjack+ace+value&aqs=chrome..69i57.4070j0j7&sourceid=chrome&ie=UTF-8)  
+- What happens if everyone busts?
 - Who wins if multiple players get the same number closest to 21?
 - Who wins if multiple players get Blackjack?
 
