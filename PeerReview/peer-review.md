@@ -39,7 +39,26 @@ function should_draw_a_card( $x )
 {
 	global $players, $dealer;
 ```
-
+```php
+function draw_a_card( $x )
+{
+	global $deck, $players;
+```
+```php
+function draw_a_hole_card( $x )
+{
+	global $deck, $players;
+```
+```php
+function show_hand( $x )
+{
+	global $deck, $players;
+```
+```php
+function apply_gamerules( $x )
+{
+	global $inital_handsize, $deck, $players, $dealer;
+```
 ### Do you have any additional comments not covered in the above questions?
 - In the ReadMe file I don't understand the second instruction *"Win instantly if the dealers hole card matches"*
 - In the ReadMe file it would be helpful to understand what the point values of each card, especially the Ace.  I thought the Ace could be two different values, but it has been so long since I have played Blackjack that I wasn't sure.  May need more instructions for us novice players.  ;)
