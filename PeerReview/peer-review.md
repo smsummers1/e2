@@ -27,6 +27,35 @@
 - the logic in index-controller could use comments to explain the logic.
 
 ### List any/all built-in PHP methods used with a brief summary of what the method does
+function whohas_thebutton()
+{
+	global $players;
+```
+  
+```php
+function should_draw_a_card( $x )
+{
+	global $players, $dealer;
+```
+```php
+function draw_a_card( $x )
+{
+	global $deck, $players;
+```
+```php
+function draw_a_hole_card( $x )
+{
+	global $deck, $players;
+```
+```php
+function show_hand( $x )
+{
+	global $deck, $players;
+```
+```php
+function apply_gamerules( $x )
+{
+	global $inital_handsize, $deck, $players, $dealer;
 
 ### Are there any parts of the code that you found interesting or taught you something new?
 
