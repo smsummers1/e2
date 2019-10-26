@@ -26,33 +26,33 @@
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
 - the logic in index-controller could use comments to explain the logic.
 
-### List any/all built-in PHP methods used with a brief summary of what the method does
+### List any/all built-in PHP functions used with a brief summary of what the function does
 ```php
-function determine_outcome()
+determine_outcome()
 ```
 
 ```php
-function whohas_thebutton()
+whohas_thebutton()
 ```
   
 ```php
-function should_draw_a_card( $x )
+should_draw_a_card( $x )
 ```
 
 ```php
-function draw_a_card( $x )
+draw_a_card( $x )
 ```
 
 ```php
-function draw_a_hole_card( $x )
+draw_a_hole_card( $x )
 ```
 
 ```php
-function show_hand( $x )
+show_hand( $x )
 ```
 
 ```php
-function apply_gamerules( $x )
+apply_gamerules( $x )
 ```
 
 ### Are there any parts of the code that you found interesting or taught you something new?
