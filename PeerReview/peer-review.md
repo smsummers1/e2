@@ -31,10 +31,12 @@
 
 ```php
 whohas_thebutton()
+//
 ```
   
 ```php
 should_draw_a_card( $x )
+//gives suggestion to user if they should draw a card
 ```
 
 ```php
