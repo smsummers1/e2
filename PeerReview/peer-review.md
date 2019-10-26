@@ -15,8 +15,17 @@
 - alksjdf
 
 ### Referencing the course notes on [Form design flow](https://hesweb.dev/e2/notes#/php/form-flow), describe the form design flow used in this project.
+- Utilizing **Design C**
 
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
+- *index-controller.php* is supposed to get results from the session for the index.php file.  
+- *index.php* displays the form and results
+- *process.php* logic only, no output, sets session variables, and redirects to index.php file.
+
+-issues with Design Flow C include
+	- laskjdfa
+	-;lakjsfd
+	-;alkjsdfa
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
 
