@@ -18,16 +18,13 @@
 - Utilizing **Design C**
 
 ### Are there any separation of concern issues (i.e. non-display specific logic in view files, display code in controller files)? 
-- *index-controller.php* is supposed to get results from the session for the index.php file.  
-- *index.php* displays the form and results
-- *process.php* logic only, no output, sets session variables, and redirects to index.php file.
-
-- issues with Design Flow C include
-	- laskjdfa
-	- ;lakjsfd
-	- ;alkjsdfa
+- My limited understanding in the video from Week 5 Part 4 (19:57) where it explains Design Flow C I believe the following should occur......
+- *index-controller.php* is supposed to get results from the session for the index.php file.  Much of your index-controller.php file is processing and setting session variables which is supposed to occur in the process.php file.
+- *index.php* is supposed to display the form and final game results. This seems to be well accomplished in your index.php file.
+- *process.php* is supposed to process data, contain logic, with no output, then set session variables, and finally redirecting to index.php file.
 
 ### Are there aspects of the code that you feel were not self-evident and would benefit from comments?
+- the logic in index-controller could use comments to explain the logic.
 
 ### List any/all built-in PHP methods used with a brief summary of what the method does
 
