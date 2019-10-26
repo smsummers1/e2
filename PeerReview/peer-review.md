@@ -12,7 +12,8 @@
 - I like how you had three players where two were the user and one was the computer.  Nice touch!
 - I also thought adding the imagery was an excellent idea!!!
 
--- 
+___
+
 ### Are you able to produce any errors or unexpected results?
 - **Disclaimer:**  I am not sure that there are actually errors and since my knowledge of Blackjack is based on recent Google Searches even my expected results may be off.  So please take these next few points with a grain of salt and realize that I am a total newbie!  :)
 - Still says Player 1 has Blackjack, but they no longer have Blackjack, right?
