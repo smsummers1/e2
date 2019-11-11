@@ -2,15 +2,15 @@
 + By: Shawna Summers
 + Production URL: <http://p4.shawnasummers.xyz>
 
-##Required pages and features
+## Required pages and features
 
-#Your application should include, at minimum, these three pages:
+# Your application should include, at minimum, these three pages:
 
 * Home page - With game title and instructions as well as the form to play the game; the results of submitting/playing the game should also show on this page.
 * Round History - Page showing a summary of results of every round of the game
 * Round Details - Page showing the details of a specific round (linked from the Round History page)
 
-#As part of this project, you will also apply the following concepts:
+# As part of this project, you will also apply the following concepts:
 
 * Form validation
 * Security best practices for form processing and database integration
