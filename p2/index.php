@@ -1,30 +1,31 @@
+
+
 <!DOCTYPE html>
 <!-- Author: Shawna Summers -->
 <!-- Project: 2 -->
 
 <html lang="en">
 
-    <head>
-        <title>Project 2</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <title>Project 2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    </head>
+</head>
 
-    <body>
-        <h1>Tic Tac Toe</h1>
+<body>
+    <h1>Tic Tac Toe</h1>
 
-        <h2 class="important">Mechanics</h2>
-        <ul>
-            <li>Player A and B randomly gets assigned a token of X or O</li>
-            <li>Player assigned X goes first</li>
-            <li>The board consists of 9 locations in a 3x3 layout</li>
-            <li>Each player takes turns until all empty locations on the board have a token or a player gets 3 adjacent
-                tokens wins.</li>
-            <li>If no player wins it becomes a tie game.</li>
-            <li>Display the game results.</li>
-        </ul>
-        <!--<p>There are 9 locations on the board.  O gets 4 turns.  X gets 5 turns.  Player 1 and Player 2 randomly get assigned an O or X. Which ever player ends up being assigned X will get an extra last move because X always goes first and whoever goes first in tic tac toe ends up getting an extra turn. (This is something I never noticed before writting this program. Too funny!)</p>
+    <h2 class="important">Mechanics</h2>
+    <ul>
+        <li>Player A and B randomly gets assigned a token of X or O</li>
+        <li>Player assigned X goes first</li>
+        <li>The board consists of 9 locations in a 3x3 layout</li>
+        <li>Each player takes turns until all empty locations on the board have a token or a player gets 3 adjacent tokens wins.</li>
+        <li>If no player wins it becomes a tie game.</li>
+        <li>Display the game results.</li>
+    </ul>
+    <!--<p>There are 9 locations on the board.  O gets 4 turns.  X gets 5 turns.  Player 1 and Player 2 randomly get assigned an O or X. Which ever player ends up being assigned X will get an extra last move because X always goes first and whoever goes first in tic tac toe ends up getting an extra turn. (This is something I never noticed before writting this program. Too funny!)</p>
     <p>The board is an array that has an index that starts at 0 and ends at 8 starting in the upper left hand corner and ending in the bottom right hand corner shown below. 
     </p>
 
@@ -67,11 +68,11 @@
     </table>
     
     <p>The winner is the player that ends up with three adjacent Xs or Os on the board. </p>-->
+    
+    <h2 class="important">Results</h2>
 
-        <h2 class="important">Results</h2>
+    <?php require 'index-controller3.php' ?>
 
-        <?php require 'index-controller3.php' ?>
-
-    </body>
+</body>
 
 </html>
