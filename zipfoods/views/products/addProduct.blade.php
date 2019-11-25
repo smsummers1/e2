@@ -24,27 +24,27 @@
         
         <div class='form-group'>
             <label for='name'>Name</label>
-            <input type='text' class="form-control" name='name' id='name' value='{{ $app->old("name") }}' required>
+            <input type='text' class="form-control" name='name' id='name' placeholder="Enter Name" value='{{ $app->old("name") }}' required>
         </div>
 
         <div class='form-group'>
             <label for='description'>Description</label>
-            <input type='text' class="form-control" name='description' id='description' value='{{ $app->old("description") }}' required>
+            <input type='text' class="form-control" name='description' id='description' placeholder="Enter product description at least 25 characters long" value='{{ $app->old("description") }}' required>
         </div>
         
         <div class='form-group'>
             <label for='price'>Price</label>
-            <input type='number' step='.01' class="form-control" name='price' id='price' value='{{ $app->old("price") }}' required>
+            <input type='text' class="form-control" name='price' id='price' placeholder="Enter price" value='{{ $app->old("price") }}' required>
         </div>
         
         <div class='form-group'>
             <label for='available'>Available</label>
-            <input type='number' step='1' class="form-control" name='available' id='available' value='{{ $app->old("available") }}' required>
+            <input type='number' step='1' class="form-control" name='available' id='available' placeholder="Enter number of products available" value='{{ $app->old("available") }}' required>
         </div>
         
         <div class='form-group'>
             <label for='weight'>Weight</label>
-            <input type='number' step='.01' class="form-control" name='weight' id='weight' value='{{ $app->old("weight") }}' required>
+            <input type='number' step='.01' class="form-control" name='weight' id='weight' placeholder="Enter weight of product" value='{{ $app->old("weight") }}' required>
         </div>
         
         <div class='form-group'>
