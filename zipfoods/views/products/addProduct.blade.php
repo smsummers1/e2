@@ -39,12 +39,12 @@
         
         <div class='form-group'>
             <label for='available'>Available</label>
-            <input type='number' step='1' class="form-control" name='available' id='available' placeholder="Enter number of products available" value='{{ $app->old("available") }}' required>
+            <input type='text' class="form-control" name='available' id='available' placeholder="Enter number of products available" value='{{ $app->old("available") }}' required>
         </div>
         
         <div class='form-group'>
             <label for='weight'>Weight</label>
-            <input type='number' step='.01' class="form-control" name='weight' id='weight' placeholder="Enter weight of product" value='{{ $app->old("weight") }}' required>
+            <input type='text' class="form-control" name='weight' id='weight' placeholder="Enter weight of product" value='{{ $app->old("weight") }}' required>
         </div>
         
         <div class='form-group'>
