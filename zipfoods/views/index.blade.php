@@ -1,8 +1,8 @@
 @extends('templates.master')
 
 @section('title')
-    {{ $welcome }}
-@stop
+    ZipFoods
+@endsection
 
 @section('content')
     
@@ -14,6 +14,11 @@
 
 <p>
     <a href='/products'>Check out our selection of products...</a>
+    <br><br><br><br><br><br><br><br>
+    <div style="background-color: lightgrey">
+        <h4>Admin Section</h4>
+        <a href='/addProduct'>Add New Product</a>
+    </div>
 </p>
 
 @endsection

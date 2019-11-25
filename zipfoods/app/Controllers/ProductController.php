@@ -39,7 +39,6 @@ class ProductController extends Controller
             $this->app->redirect('/products');
         }
         
-        
         //load the product details
         //this is pulling from the database
         $product = $this->app->db()->findById('products', $id);
@@ -49,10 +48,8 @@ class ProductController extends Controller
         $reviews = $this->app->db()->findByColumn('reviews', 'product_id', '=', $id);
         
         //dump($reviews);
-
         
-        if(is_null($product)) 
-        {
+        if(is_null($product)){
             return $this->app->view('products.missing');
         }
         
@@ -90,6 +87,46 @@ class ProductController extends Controller
         
         #send user back to the product they were leaving the comment for.
         $this->app->redirect('/product?id='.$id, [ 'confirmationName' => $name ]);
+    }
+    
+    public function saveProduct()
+    {
+        $this->app->validate([
+        'name' => 'required',
+        'description' => 'required|minLength:25',
+        'price' => 'required|numeric',
+        'available' => 'required|digit',
+        'weight' => 'required|numeric',
+        'perishable' => 'required'
+        ]);
+            
+        //dump($_POST);
+        $name = $this->app->input('name');
+        $description = $this->app->input('description');
+        $price = $this->app->input('price');
+        $available = $this->app->input('available');
+        $weight = $this->app->input('weight');
+        $perishable = $this->app->input('perishable');
+        
+        $data = [
+            'name' => $name, 
+            'description' => $description, 
+            'price' => $price,
+            'available' => $available,
+            'weight' => $weight,
+            'perishable' => $perishable
+        ];
+        
+        #insert review form data into the database
+        $this->app->db()->insert('products', $data);
+        
+        #send user back to the product they were leaving the comment for.
+        $this->app->redirect('/products');
+    }
+    
+    public function addProduct()
+    {
+        return $this->app->view('products/addProduct');
 
     }
 }
