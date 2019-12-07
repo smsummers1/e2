@@ -1,0 +1,100 @@
+#logo {
+    width:300px;
+}
+
+fieldset{
+    width: 300px;
+    height: 90px;
+}
+
+input[type=number]{
+    width: 100px;
+    height: 18px;
+    font-size: 30px;
+    padding: 14px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.button{
+    width: 115px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px;
+    margin: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px #888888;
+    position: relative;
+    left: 160px;
+    top: -55px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.button:active, .mysteryButton:active{
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+.guessInfo{
+    font-size: 20px;
+}
+
+.results{
+    font-size: 25px;
+    color: blue;
+    
+}
+
+.mysteryButton{
+    width: 100px;
+    background-color: blue;
+    color: white;
+    padding: 4px;
+    margin: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px #888888;
+    position: relative;
+    left: 350px;
+    top: -330px;
+}
+
+.mysteryButton:hover {
+    background-color: mediumblue;
+}
+
+#revealNumber{
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    left: 380px;
+    top: -378px;
+}
+
+.fadeIn{
+    opacity: 1;
+    animation-name: fadeInOverTime;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOverTime{
+    0% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
