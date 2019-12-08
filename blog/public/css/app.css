@@ -1,3 +1,40 @@
-#logo {
-    width:300px;
+body {
+    text-align: center;
+}
+
+a#logo {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 20px;
+}
+
+label {
+    margin: 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+input[type=text] {
+    width: 400px;
+}
+
+textarea {
+    height: 300px;
+    width: 700px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
