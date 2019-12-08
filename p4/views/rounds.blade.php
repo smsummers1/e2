@@ -6,6 +6,13 @@ p4 - All Rounds
 
 @section('content')
     
-<h2>All Rounds</h2>
+    <h2>All Rounds</h2>
+
+    <ul>
+        @foreach($rounds as $round)
+            <li>{{ $round['id'] }}</li>
+        @endforeach
+
+    </ul>
 
 @endsection
