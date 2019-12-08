@@ -27,8 +27,8 @@
     <form method='post' action='/save-new-post'>        
         <label for='title'>Title </label>
         <input type="text" id='title' name='title' value="{{ $app->old('title') }}">
-        <label for='content'>Content (Min: 255)</label>
-        <textarea id='content' name='content'>{{ $app->old('title') }}</textarea>
+        <label for='content'>Content</label>
+        <textarea id='content' name='content'>{{ $app->old('content') }}</textarea>
         <button type="submit" class='btn btn-primary'>Create New Post</button>
     </form>
 

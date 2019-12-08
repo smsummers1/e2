@@ -17,7 +17,7 @@ class AppController extends Controller
     {
         $this->app->validate([
             'title' => 'required',
-            'content' => 'required|minLength:255',
+            'content' => 'required|maxLength:255',
         ]);
         
         $title = $this->app->input('title');
