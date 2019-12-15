@@ -6,6 +6,15 @@ p4 - Individual Round
 
 @section('content')
     
-<h2>Individual Round</h2>
+<h2>Game Round: {{ $round['id'] }}</h2>
+<p>
+    Total Guesses: {{ $round['total_guesses'] }}
+</p>
+
+<p>
+    Date and Time: {{ $round['date']}}
+</p>
+
+<a href='/rounds'>&larr; All Rounds</a>
 
 @endsection

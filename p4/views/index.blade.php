@@ -5,6 +5,8 @@
 @endsection
 
 @section('content')
+
+    
         
     <h1>High Low Guessing Game</h1>
         
@@ -28,17 +30,50 @@
 
     Guess a whole number between 0 and 100:<br><br>
 
+    @if($app->errorsExist())
+        <ul class='alert alert-danger' style='width:600px'>
+            @foreach($app->errors() as $error)
+               <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        <br>
+    @endif
+    
     <fieldset>
-        <form action="process.php" method="post">
-            <input type="number" name="guess" step="1" min="0" max="100" required><br>&nbsp;&nbsp;
-            <input type="submit" class="button" value="Guess">
+        <form action="/process" method="post">
+            <input type="number" name="guess"><br>&nbsp;&nbsp;
+            <input type="submit" id="guessButton" class="button" value="Guess">
 
         </form>
 
-        <form action="reset.php" method="post">
+        <form action="/reset" method="post">
             &nbsp;&nbsp;
             <input type="submit" name="reset" class="button" value="Play Again">
         </form>
+        
     </fieldset>
+
+    <?php //include 'reveal.php'; ?>
+
+    <br><br>
+
+    @if(isset($_SESSION['guess']))
+        <br>
+        Number:  {{$_SESSION['number']}}
+        <br>
+        Player Guess: {{$_SESSION['guess']}}
+        <br>
+        Result: {{$_SESSION['result']}}
+        <br>
+        All Guesses: 
+        @foreach($_SESSION['guesses'] as $guess)
+            {{ $guess }}
+        @endforeach
+        <br>
+        Total Number of Guesses: {{$_SESSION['numGuesses']}}
+        <br>
+    @endif
+    <br><a href="/rounds">View Game History</a><br>
+
 
 @endsection

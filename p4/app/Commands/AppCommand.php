@@ -12,8 +12,8 @@ class AppCommand extends Command
     public function migrate()
     {
         $this->app->db()->createTable('rounds', [
-            'win' => 'tinyint(1)',
-            'numGuesses' => 'int(11)',
+            'total_guesses' => 'int(3)',
+            'date' => 'timestamp'
         ]);
         
         dump('Migration Complete.');
@@ -29,8 +29,13 @@ class AppCommand extends Command
 
             # Set up a round
             $round = [
-                'win' => $faker->numberBetween(0,1),
-                'numGuesses' => $faker->numberBetween(1, 50),
+                'total_guesses' => $faker->numberBetween(1, 50)
+                //'date' => $faker->dateTime('now', null)
+                //kept getting an error when I used faker data for the timestamp, so I just allowed the database to populate that field instead of the faker application
+                //here is the error I kept getting:  
+                //PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/e2/p4/vendor/susanbuck/e2core/src/Database.php on line 33
+
+                //Recoverable fatal error: Object of class DateTime could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/e2/p4/vendor/susanbuck/e2core/src/Database.php on line 33
             ];
 
             # Insert the round

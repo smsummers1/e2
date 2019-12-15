@@ -8,9 +8,12 @@ p4 - All Rounds
     
     <h2>All Rounds</h2>
 
-    <ul>
+    <ul style="list-style-type: none">
         @foreach($rounds as $round)
-            <li>{{ $round['id'] }}</li>
+            <a href="/round?id={{ $round['id'] }}"><li>
+                {{ $round['id'] }}
+                </li></a>
+            <br>
         @endforeach
 
     </ul>
