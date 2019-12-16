@@ -6,11 +6,11 @@
 
 @section('content')
 
+<div class="row">
     
-        
-    <h1>High Low Guessing Game</h1>
-        
-    <h2>Instructions</h2>
+    <div class="col-sm-8" style="background-color:lavender;">
+    <br>    
+    <h3><small> Instructions </small></h3>
 
     <ul>
         <li>Guess the MYSTERY whole number between 0 and 100</li>
@@ -24,11 +24,13 @@
         <li>Use the REVEAL NUMBER button to show the mystery number</li>
 
         <li>Use the PLAY AGAIN button to start over</li>
+        
+        <li>Click on the logo to go back to the home page</li>
     </ul>
+    
+    <h3><small>Play</small></h3>
 
-    <h2>Play</h2>
-
-    Guess a whole number between 0 and 100:<br><br>
+        <p>Guess a whole number between 0 and 100:</p>
 
     @if($app->errorsExist())
         <ul class='alert alert-danger' style='width:600px'>
@@ -38,8 +40,7 @@
         </ul>
         <br>
     @endif
-    
-    <fieldset>
+   
         <form action="/process" method="post">
             <input type="number" name="guess"><br>&nbsp;&nbsp;
             <input type="submit" id="guessButton" class="button" value="Guess">
@@ -51,29 +52,50 @@
             <input type="submit" name="reset" class="button" value="Play Again">
         </form>
         
-    </fieldset>
+    </div>
 
-    <?php //include 'reveal.php'; ?>
-
-    <br><br>
-
-    @if(isset($_SESSION['guess']))
-        <br>
-        Number:  {{$_SESSION['number']}}
-        <br>
-        Player Guess: {{$_SESSION['guess']}}
-        <br>
-        Result: {{$_SESSION['result']}}
-        <br>
-        All Guesses: 
-        @foreach($_SESSION['guesses'] as $guess)
-            {{ $guess }}
-        @endforeach
-        <br>
-        Total Number of Guesses: {{$_SESSION['numGuesses']}}
-        <br>
-    @endif
-    <br><a href="/rounds">View Game History</a><br>
-
-
+    <div class="col-sm-4" style="background-color:#F8F8F8">
+        <?php //include 'reveal.php'; ?>
+        
+        <div class="row">
+                <div class="col" style="background-color:#E8E8E8;"><br><p><a href="/rounds"><center>View Game History</center></a></p><br></div>
+        </div>
+        
+        @if(isset($_SESSION['guess']))
+            <table class="table" style="border:1px solid black;">
+                <br>
+                <h3><small>Game Data</small></h3>
+                <tr>
+                    <td><b>Number:</b></td>  <td>{{$_SESSION['number']}}</td>
+                </tr>
+            
+                <tr>
+                    <td><b>Player Guess:</b> </td> <td>{{$_SESSION['guess']}}</td>
+                </tr>
+                
+                <tr>
+                    <td><b>Result:</b></td> <td>{{$_SESSION['result']}}</td>
+                </tr>
+                
+                <tr>
+                    <td><b>All Guesses: </b></td> 
+                    <td>
+                    @foreach($_SESSION['guesses'] as $guess)
+                        {{ $guess }}
+                    @endforeach
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><b>Total Guesses:</b></td> <td>{{$_SESSION['numGuesses']}}</td>
+                </tr>
+                
+            </table>
+        @endif
+        
+        
+    </div>
+</div>
+    
 @endsection
+    

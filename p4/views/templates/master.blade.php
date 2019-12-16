@@ -7,8 +7,16 @@
     <meta charset='utf-8'>
 
     <link rel='shortcut icon' href='/favicon.ico'>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
     <link href='/css/style.css' rel='stylesheet'>
 
@@ -16,16 +24,25 @@
 
 </head>
 <body>
+    <div class="container-sm border rounded-lg" style="width:80%;background-color:lightgrey;">
+        <div class="row" style="background-color:lightgrey;">
+            <div class="col-sm-4" ></div>
+            <div class="col-sm-4" style="width:70%;background-color:lightgrey;">
+                <header><center>
+                    <a href='/'><img id='logo' class="rounded img-fluid" src='/images/hiLo-logo.jpeg' alt='High Low Game Logo'></a>
+                    <h1><small>Guessing Game</small></h1>
+                </center></header>
+            </div>
+            <div class="col-sm-4" style="background-color:lightgrey;"> </div>
 
-<header>
-    <a href='/'><img id='logo' src='/images/hiLo-logo.jpeg' alt='Hi Lo Game Logo'></a>
-</header>
+        </div>
+        
+        <main>
+            @yield('content')
+        </main>
 
-<main>
-    @yield('content')
-</main>
-
-@yield('body')
-
+        @yield('body')
+        
+    </div>
 </body>
 </html>
