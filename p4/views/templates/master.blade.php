@@ -19,21 +19,23 @@
     <script   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
     <link href='/css/style.css' rel='stylesheet'>
-
+    
     @yield('head')
 
 </head>
 <body>
-    <div class="container-sm border rounded-lg" style="width:80%;background-color:lightgrey;">
-        <div class="row" style="background-color:lightgrey;">
-            <div class="col-sm-4" ></div>
-            <div class="col-sm-4" style="width:70%;background-color:lightgrey;">
-                <header><center>
+    <div class="container-sm border rounded-lg" style="width:85%;background-color:lightgrey; position: relative; top: -90px;">
+        <div class="row text-center" style="background-color:lightgrey;">
+            
+            <div class="col-sm" style="background-color:lightgrey;">
+                
+                <header>
                     <a href='/'><img id='logo' class="rounded img-fluid" src='/images/hiLo-logo.jpeg' alt='High Low Game Logo'></a>
-                    <h1><small>Guessing Game</small></h1>
-                </center></header>
+                    
+                    <h1 class="text-center"><small>Guessing Game</small></h1>
+               </header>
+                
             </div>
-            <div class="col-sm-4" style="background-color:lightgrey;"> </div>
 
         </div>
         

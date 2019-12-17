@@ -1,7 +1,7 @@
 <script>
     function disableGuessButton() 
     {
-       document.getElementById("guessButton").innerHTML = "disable";
+       document.getElementById("guessButton").disabled = true;
 
     }   
 </script>

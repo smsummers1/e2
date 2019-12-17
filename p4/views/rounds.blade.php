@@ -6,23 +6,22 @@ p4 - All Rounds
 
 @section('content')
         
-        <div class="col-sm" style="background-color:#f8f8f8; ">
-            <center><br>
-                <h2>Game History</h2><br>
+        <div class="col-sm text-center" style="background-color:#f8f8f8;">
+            <br>
+                <h2 style="font-size: 24pt;">Game History</h2><br>
 
                 <h5><i>All Rounds</i></h5>
 
-                <ul style="list-style-type: none">
+                <ul class="list-unstyled">
                     @foreach($rounds as $round)
-                        <a href="/round?id={{ $round['id'] }}">
-                            <li style="font-size:18pt;">
+                        <a href="/round?id={{ $round['id'] }}" id="historyLink">
+                            <li style="font-size:20pt;" >
                             {{ $round['id'] }}
                             </li>
                         </a>
                         <br>
                     @endforeach
                 </ul>
-            </center>
         </div>
 
 @endsection
