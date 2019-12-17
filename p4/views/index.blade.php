@@ -33,37 +33,39 @@
     <br>
     </div>
         
-    <br><br><br>
-    <h3><small>Play</small></h3>
+    <br><br>
+    <div class="text-center">
+        <h2><small>Play</small></h2>
 
-        <p style="font-size:12pt;">Guess a whole number between 0 and 100:</p>
+            <p style="font-size:12pt;">Guess a whole number between 0 and 100:</p>
 
-    @if($app->errorsExist())
-        <ul class='alert alert-danger' style='width:600px'>
-            @foreach($app->errors() as $error)
-               <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-        <br>
-    @endif
-      <fieldset>
-        <form action="/process" method="post">
-            <input type="number" name="guess"><br>&nbsp;&nbsp;
-            <input type="submit" id="guessButton" class="button" value="Guess">
+        @if($app->errorsExist())
+            <ul class='alert alert-danger' style='width:600px'>
+                @foreach($app->errors() as $error)
+                   <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+            <br>
+        @endif
+              
+                <form action="/process" method="post">
+                    <input type="number" name="guess"><br>&nbsp;&nbsp;
+                    <input type="submit" id="guessButton" class="button" value="Guess">
 
-        </form>
+                </form>
 
-        <form action="/reset" method="post">
-            &nbsp;&nbsp;
-            <input type="submit" name="reset" class="button" value="Play Again">
-        </form>
-      </fieldset>
+                <form action="/reset" method="post">
+                    &nbsp;&nbsp;
+                    <input type="submit" name="reset" class="button" value="Play Again">
+                </form>
+             
+          </div>
     </div>
 
     <div class="col-sm-5 text-center" style="background-color:#F8F8F8;">
         
         <div class="row">
-                <div class="col align-middle" style="background-color:#E8E8E8;"><br><p><a href="/rounds" id="historyLink">View Game History</a></p></div>
+                <div class="col align-middle" style="background-color:#E8E8E8;"><br><p><a href="/rounds" class="historyLink">View Game History</a></p></div>
         </div>
         <br>
         @if(isset($_SESSION['guess']))

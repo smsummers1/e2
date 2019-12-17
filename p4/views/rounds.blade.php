@@ -11,17 +11,18 @@ p4 - All Rounds
                 <h2 style="font-size: 24pt;">Game History</h2><br>
 
                 <h5><i>All Rounds</i></h5>
-
+                @foreach($rounds as $round)
                 <ul class="list-unstyled">
-                    @foreach($rounds as $round)
-                        <a href="/round?id={{ $round['id'] }}" id="historyLink">
-                            <li style="font-size:20pt;" >
-                            {{ $round['id'] }}
-                            </li>
-                        </a>
-                        <br>
-                    @endforeach
+                    
+                        <li style="font-size:20pt;" >
+                            <a href="/round?id={{ $round['id'] }}" class="historyLink">
+                                {{ $round['id'] }}
+
+                            </a>
+                        </li>
                 </ul>
+                
+                @endforeach
         </div>
 
 @endsection
