@@ -20,13 +20,11 @@
 * Click on the **<- All Rounds** link at the bottom of the details page to go back to **View Game History** page
 
 ### Your application should include, at minimum, these three pages:
-
 * Home page - With game title and instructions as well as the form to play the game; the results of submitting/playing the game should also show on this page.
 * Round History - Page showing a summary of results of every round of the game
 * Round Details - Page showing the details of a specific round (linked from the Round History page)
 
 ### As part of this project, you will also apply the following concepts:
-
 * Form validation
 * Security best practices for form processing
 * Database integration
@@ -34,6 +32,15 @@
 * Object-oriented programming
 * Framework structure and tools (Routes, Controllers, Views)
 * Console - Migration and Seeds
+
+### e2framework
+* e2framework* is a rudimentary PHP framework designed for the course [DGMD E-2 Web Programming for Beginners with PHP](https://hesweb.dev/e2).
+
+The goal of this software is to provide students an introduction to working with more advanced PHP frameworks such as Laravel and/or Symfony.
+
++ __Documentation:__ <https://hesweb.dev/e2/notes#/php/e2framework/installation>
++ __Guide:__ <https://hesweb.dev/e2/notes#/php/frameworks/intro>
+
 
 ## Outside resources
 * **php manual** - php.net - https://www.php.net/
